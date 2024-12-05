@@ -29,7 +29,6 @@ for row_i, row in enumerate(matrix):
                     if v:
                         v, new_r, new_s = has_neighbour_at_direction(new_r, new_s, "S", dire)
                         if v:
-                            print(f"Found XMAS ending at {new_r}.{new_s} in direction {dire}")
                             c += 1
 print(c)
 
