@@ -6,8 +6,6 @@ with open("input.txt") as data:
         result, values = line.split(": ")
         lines.update({int(result): list(map(int, values.split(" ")))})
 
-maxi = len(lines)
-count = 0
 def is_possible(result, values):
     global count
     count += 1
