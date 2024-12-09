@@ -7,8 +7,6 @@ with open("input.txt") as data:
         lines.update({int(result): list(map(int, values.split(" ")))})
 
 def is_possible(result, values):
-    global count
-    count += 1
     operator_combinations = product("+*&", repeat=len(values) - 1)
     for operators in operator_combinations:
         intermediate = values[0]
