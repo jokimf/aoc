@@ -2,7 +2,7 @@ from functools import cache
 
 
 @cache
-def blink(stone_value, iteration):
+def blink(stone_value, iteration) -> int:
     if iteration == 0:
         return 1
     elif stone_value == 0:
@@ -13,6 +13,4 @@ def blink(stone_value, iteration):
     else:
         return blink(stone_value * 2024, iteration-1)
 
-
-with open("input.txt") as data:
-    print(sum(blink(s, 75) for s in list(map(int, data.read().split(" ")))))
+print(sum(blink(s, 75) for s in list(map(int, open("input.txt").read().split(" ")))))
