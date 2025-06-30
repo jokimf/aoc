@@ -28,3 +28,5 @@ Written mostly in Python
 |23||
 |24||
 |25||
+
+Install utilities: `pip install ../aocu`
